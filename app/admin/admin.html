@@ -1,0 +1,195 @@
+<section class="mainbar" data-ng-controller="admin as vm">
+    <section class="matter">
+        <div class="container">
+            <div class="row">
+                <div class="widget wviolet">
+                    <div data-cc-widget-header title="{{vm.title}}"></div>
+                    <form  id="trans_form" ng-submit="submit()" >
+                        <div class="widget-content user">
+                            <h3>Please Select Your Mode of Transportation</h3>
+
+                            <table class="table table-condensed table-striped">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="radio">
+                                                 <div class="pull-left"><i class="fa fa-ambulance fa-2x" aria-hidden="true"></i></div>
+                                                <label>                                                
+                                                    <input type="radio" name="tran_type" id="trans_rad1" value="ambulance" aria-label="..." ng-model="trans.name"/>                                               
+                                                    Ambulance
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio">
+                                                 <div class="pull-left"><i class="fa fa-taxi fa-2x"></i></div>
+                                                <label>                                                
+                                                    <input type="radio" name="tran_type" id="trans_rad2" value="taxi" aria-label="..." ng-model="trans.name"/>                                               
+                                                    Taxi
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio">
+                                                 <div class="pull-left"><i class="fa fa-plane fa-2x"></i></div>
+                                                <label>                                                
+                                                    <input type="radio" name="tran_type" id="trans_rad3" value="plane" aria-label="..." ng-model="trans.name"/>                                               
+                                                    Plane
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio">
+                                                 <div class="pull-left"><i class="fa fa-subway fa-2x"></i></div>
+                                                <label>                                                
+                                                    <input type="radio" name="tran_type" id="trans_rad4" value="subway" aria-label="..." ng-model="trans.name"/>                                               
+                                                    subway
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio">
+                                                 <div class="pull-left"><i class="fa fa-wheelchair fa-2x"></i></div>
+                                                <label>                                                
+                                                    <input type="radio" name="tran_type" id="trans_rad5" value="wheelchair" aria-label="..." ng-model="trans.name"/>                                               
+                                                    Wheelchair
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio">
+                                                 <div class="pull-left"><i class="fa fa-car fa-2x"></i></div>
+                                                <label>                                                
+                                                    <input type="radio" name="tran_type" id="trans_rad6" value="car" aria-label="..." ng-model="trans.name" ng-checked="true">                                               
+                                                    Automobile
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio">
+                                                 <div class="pull-left"><i class="fa fa-rocket fa-2x"></i></div>
+                                                <label>                                                
+                                                    <input type="radio" name="tran_type" id="trans_rad7" value="rocket" aria-label="..." ng-model="trans.name"/>                                               
+                                                    rocket
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio">
+                                                 <div class="pull-left"><i class="fa fa-bicycle fa-2x"></i></div>
+                                                <label>                                                
+                                                    <input type="radio" name="tran_type" id="trans_rad8" value="bicycle" aria-label="..." ng-model="trans.name"/>                                               
+                                                    bicycle
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio">
+                                                 <div class="pull-left"><i class="fa fa-fighter-jet fa-2x"></i></div>
+                                                <label>                                                
+                                                    <input type="radio" name="tran_type" id="trans_rad9" value="fighter-jet" aria-label="..." ng-model="trans.name"/>                                               
+                                                    fighter-jet
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio">
+                                                 <div class="pull-left"><i class="fa fa-ship fa-2x"></i></div>
+                                                <label>                                                
+                                                    <input type="radio" name="tran_type" id="trans_rad10" value="ship" aria-label="..." ng-model="trans.name"/>                                               
+                                                    ship
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio">
+                                                 <div class="pull-left"><i class="fa fa-train fa-2x"></i></div>
+                                                <label>                                                
+                                                    <input type="radio" name="tran_type" id="trans_rad11" value="train" aria-label="..." ng-model="trans.name"/>                                               
+                                                    Train
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio">
+                                                 <div class="pull-left"><i class="fa fa-bus fa-2x"></i></div>
+                                                <label>                                                
+                                                    <input type="radio" name="tran_type" id="trans_rad12" value="bus" aria-label="..." ng-model="trans.name"/>                                               
+                                                    Bus
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio">
+                                                 <div class="pull-left"><i class="fa fa-motorcycle fa-2x"></i></div>
+                                                <label>                                                
+                                                    <input type="radio" name="tran_type" id="trans_rad13" value="motorcycle" aria-label="..." ng-model="trans.name"/>                                               
+                                                    motorcycle
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio">
+                                                 <div class="pull-left"><i class="fa fa-space-shuttle fa-2x"></i></div>
+                                                <label>                                                
+                                                    <input type="radio" name="tran_type" id="trans_rad14" value="space-shuttle" aria-label="..." ng-model="trans.name"/>                                               
+                                                    space-shuttle
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="radio">
+                                                 <div class="pull-left"><i class="fa fa-truck fa-2x"></i></div>
+                                                <label>                                                
+                                                    <input type="radio" name="tran_type" id="trans_rad15" value="truck" aria-label="..." ng-model="trans.name"/>                                               
+                                                    truck
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>    
+                                    <tr>
+                                        <td>
+                                            <button type="submit" class="btn btn-primary">Select</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>                           
+                        </div>
+                        
+                    </form>
+                    <div class="widget-foot">
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>

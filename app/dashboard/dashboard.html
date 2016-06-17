@@ -1,0 +1,84 @@
+﻿<section id="dashboard-view" class="mainbar" data-ng-controller="dashboard as vm">
+    <section class="matter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="today-datas">
+                        <li class="blightblue">
+                            <div class="pull-left"><i class="fa fa-car"></i></div>
+                            <div class="datas-text pull-right">
+                                <span id="accelerometer-x" class="bold">Determining Speed...</span> 	Current Speed
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+
+                        <li class="borange">
+                            <div class="pull-left"><i class="fa fa-plane"></i></div>
+                            <div class="datas-text pull-right">
+                                <span id="accelerometer-y" class="bold">{{vm.messageCount}}</span> Altitude
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                        <li class="blightblue">
+                            <div class="pull-left"><i class="fa fa-bus"></i></div>
+                            <div class="datas-text pull-right">
+                                <span id="accelerometer-z" class="bold">Determining Location...</span>
+                            </div>
+                            
+                            <div class="clearfix"></div>
+                             <button onclick="startWatch();" class="btn btn-success">Start Watching</button>
+                            <button onclick="stopWatch();" class="btn btn-danger">Stop Watching</button>
+                            <button onclick="startGps();" class="btn btn-warning">Start GPS</button>
+                            <button onclick="stopGps();" class="btn btn-warning">Stop GPS</button>
+                        </li>
+                      
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="widget wviolet">
+                        <div data-cc-widget-header title="Recent Trips"
+                             allow-collapse="true"></div>
+                        <div class="widget-content text-center text-info">
+                            <table class="table table-condensed table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Transportee</th>
+                                        <th>Transportation Type</th>
+                                        <th>Duration</th>
+                                        <th>Location</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr data-ng-repeat="p in vm.people">
+                                        <td>{{p.name}}</td>
+                                        <td>{{p.type}}</td>
+                                        <td>{{p.duration}}</td>
+                                        <td>{{p.location}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="widget-foot">
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="widget wgreen">
+                        <div data-cc-widget-header title="{{vm.news.title}}"
+                             allow-collapse="true"></div>
+                        <div class="widget-content text-center text-info">
+                            <small id="geolocation">{{vm.news.description}}</small>
+                        </div>
+                        <div class="widget-foot">
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
